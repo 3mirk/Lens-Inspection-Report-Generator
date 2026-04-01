@@ -11,22 +11,22 @@ A desktop tool for ophthalmic lens generator acceptance testing. Parses optical 
 
 ## Features
 
-- **Automated file discovery:** Scans input directories for measurement criteria and power map files across multiple labs and fast tools
-- **Pass/fail evaluation:** Applies acceptance logic including for design conformity criteria.
-- **Dark-mode PDF reports:** Each report includes a title page, color-coded acceptance summary, and per-lens detail pages with DDF criteria tables and powermap heatmaps
-- **Side-by-side fast tool comparison:** GUI displays file presence status for FT1 and FT2 in parallel card layouts
-- **Batch report generation:** Generate reports for multiple labs/fast tools in one click with live progress tracking
+- **Automated file discovery:** Scans input directories for expected files across multiple test sets.
+- **Pass/Fail evaluation:** Applies acceptance logic including for design conformity criteria.
+- **PDF Report Generation:** Each report includes a title page, color-coded acceptance summary, and per-lens detail pages with heatmaps
+- **Side-by-Side Comparison:** GUI displays file presence status for Equipment subcomparments in parallel card layouts
+- **Batch report generation:** Generate reports for multiple test sets with live progress tracking
 - **CLI support:** Run `report_generator.py` standalone to batch-generate PDFs without the GUI
 
 ---
 
-## Report Layout
+## Report LayouR
 
 Each generated PDF contains:
 
-1. **Title page:** Lab, generator, and fast tool identification
-2. **Acceptance summary:** Color-coded table showing pass/fail verdict for all 6 verification lenses with failure details
-3. **Per-lens detail pages:** Heatmaps and Criteria Table
+1. **Title page:** Lab, Equipment, and Subcompartment identification
+2. **Acceptance summary:** Color-coded table showing Pass/Fail Verdict for all lenses with failure mode details.
+3. **Per-lens detail pages:** Heatmaps and Criteria Table per each individual lens.
 
 ---
 
@@ -60,7 +60,7 @@ Lab folders follow the naming convention: `{lab_number}.{lab_name}.{generator_se
 ```
 input/
 └── 123.LabName.EquipmentSN/
-    ├── FT1/
+    ├── Subcompartment 1/
     │   ├── [lens]_VER0_[...].ddf
     │   ├── [lens]_VER0_[...].pmf
     │   ├── [lens]_VER1_[...].ddf
@@ -73,11 +73,9 @@ input/
     │   ├── [lens]_VERD2_[...].pmf
     │   ├── [lens]_VERD3_[...].ddf
     │   └── [lens]_VERD3_[...].pmf
-    └── FT2/
+    └── Subcompartment 2/
         └── ...
 ```
-
-Each fast tool folder contains DDF and PMF files for up to 6 verification lenses.
 
 ---
 
@@ -103,9 +101,9 @@ python gui.py
 ```
 
 - Select labs from the sidebar
-- Review file presence status in the side-by-side fast tool cards
+- Review file presence status in the side-by-side subcompartment cards
 - Choose which reports to generate from the right panel
-- Click **Generate PDF Reports** — output goes to `./output/`
+- Click **Generate PDF Reports**. Output goes to `./output/`
 
 ### Command Line
 
