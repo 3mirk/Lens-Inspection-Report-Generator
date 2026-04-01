@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+ 
+# Virtual environment
+.venv/
+venv/
+env/
+ 
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+ 
+# Generated output
+output/
+ 
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+ 
+# Old/legacy files
+old files v2/
+old files v3/
+raw_data_input/
