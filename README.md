@@ -20,7 +20,7 @@ A desktop tool for ophthalmic lens generator acceptance testing. Parses optical 
 
 ---
 
-## Report LayouR
+## Report Layout
 
 Each generated PDF contains:
 
@@ -61,18 +61,14 @@ Lab folders follow the naming convention: `{lab_number}.{lab_name}.{generator_se
 input/
 └── 123.LabName.EquipmentSN/
     ├── Subcompartment 1/
-    │   ├── [lens]_VER0_[...].ddf
-    │   ├── [lens]_VER0_[...].pmf
-    │   ├── [lens]_VER1_[...].ddf
-    │   ├── [lens]_VER1_[...].pmf
-    │   ├── [lens]_VERC_[...].ddf
-    │   ├── [lens]_VERC_[...].pmf
-    │   ├── [lens]_VERD1_[...].ddf
-    │   ├── [lens]_VERD1_[...].pmf
-    │   ├── [lens]_VERD2_[...].ddf
-    │   ├── [lens]_VERD2_[...].pmf
-    │   ├── [lens]_VERD3_[...].ddf
-    │   └── [lens]_VERD3_[...].pmf
+    │   ├── [lens]_VERx_[...].ddf
+    │   ├── [lens]_VERx_[...].pmf
+    │   ├── [lens]_VERy_[...].ddf
+    │   ├── [lens]_VERy_[...].pmf
+    │   ├── ...
+    │   ├── ...
+    │   ├── [lens]_VERn_[...].ddf
+    │   ├── [lens]_VERn_[...].pmf
     └── Subcompartment 2/
         └── ...
 ```
