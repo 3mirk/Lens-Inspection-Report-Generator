@@ -7,6 +7,14 @@
 
 A desktop tool for ophthalmic lens generator acceptance testing. Parses optical measurement data, evaluates pass/fail criteria with conformity logic, and generates PDF reports with heatmap visualizations and color-coded acceptance summaries.
 
+## Screenshots
+
+### Desktop GUI
+<img width="2884" height="1912" alt="image" src="https://github.com/user-attachments/assets/c084097a-bd7b-4152-a5d4-b9c850d69e3d" />
+
+### PDF Report
+<img width="2281" height="1199" alt="image" src="https://github.com/user-attachments/assets/9a8391bf-33e9-4273-aae0-a0b62e42e3cb" />
+
 ---
 
 ## Features
@@ -107,8 +115,6 @@ python gui.py
 python report_generator.py
 python report_generator.py --input ./input --output ./reports
 ```
-
----|
 
 ---
 
