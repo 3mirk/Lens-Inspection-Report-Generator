@@ -46,7 +46,7 @@ lens-inspection-report-generator/
 ├── lens_processing.py     # Core parsing, evaluation, and file discovery
 ├── report_generator.py    # PDF report generation (also runs standalone)
 ├── input/                 # Place lab data folders here
-│   └── 605.Technopark.28693/
+│   └── 123.LabName.EquipmentSN/
 │       ├── FT1/
 │       │   ├── *.ddf
 │       │   └── *.pmf
