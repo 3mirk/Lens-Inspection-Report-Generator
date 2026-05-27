@@ -1,4 +1,4 @@
-# Lens Inspection Report Generator
+# Equipment Commissioning Report Generator
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)
 ![PyQt6](https://img.shields.io/badge/PyQt6-Desktop_GUI-41CD52?style=flat&logo=qt&logoColor=white)
